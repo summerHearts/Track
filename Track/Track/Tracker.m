@@ -62,7 +62,7 @@ static NSString *s_uuid;
     NSDictionary* commonDic = @{@"district" : @"s",
                                 @"packageName" :  [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleIdentifier"],
                                 @"timeStamp" : [NSString stringWithFormat:@"%lld",(long long)[[NSDate date]timeIntervalSince1970]],
-                                @"deviceId" : s_uuid,
+                                @"deviceId" : @"sd",
                                 @"model" : @"sd",
                                 @"os" : @"ios",
                                 @"version" : [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleShortVersionString"],
