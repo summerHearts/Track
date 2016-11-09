@@ -15,6 +15,10 @@
 		AE09222B1DD3A658007CB32D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AE0922291DD3A658007CB32D /* LaunchScreen.storyboard */; };
 		AE0922361DD3A658007CB32D /* TrackTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922351DD3A658007CB32D /* TrackTests.m */; };
 		AE0922411DD3A658007CB32D /* TrackUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922401DD3A658007CB32D /* TrackUITests.m */; };
+		AE0922551DD3A693007CB32D /* LogData.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922501DD3A693007CB32D /* LogData.m */; };
+		AE0922561DD3A693007CB32D /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922521DD3A693007CB32D /* Tracker.m */; };
+		AE0922571DD3A693007CB32D /* Sender.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922541DD3A693007CB32D /* Sender.m */; };
+		AE09225A1DD3A72C007CB32D /* TrackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922591DD3A72C007CB32D /* TrackRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,14 @@
 		AE09223C1DD3A658007CB32D /* TrackUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TrackUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AE0922401DD3A658007CB32D /* TrackUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TrackUITests.m; sourceTree = "<group>"; };
 		AE0922421DD3A658007CB32D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AE09224F1DD3A693007CB32D /* LogData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LogData.h; sourceTree = "<group>"; };
+		AE0922501DD3A693007CB32D /* LogData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LogData.m; sourceTree = "<group>"; };
+		AE0922511DD3A693007CB32D /* Tracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tracker.h; sourceTree = "<group>"; };
+		AE0922521DD3A693007CB32D /* Tracker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tracker.m; sourceTree = "<group>"; };
+		AE0922531DD3A693007CB32D /* Sender.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Sender.h; sourceTree = "<group>"; };
+		AE0922541DD3A693007CB32D /* Sender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sender.m; sourceTree = "<group>"; };
+		AE0922581DD3A72C007CB32D /* TrackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackRequest.h; sourceTree = "<group>"; };
+		AE0922591DD3A72C007CB32D /* TrackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +113,7 @@
 		AE09221A1DD3A658007CB32D /* Track */ = {
 			isa = PBXGroup;
 			children = (
+				AE09224E1DD3A68D007CB32D /* Track */,
 				AE09221E1DD3A658007CB32D /* AppDelegate.h */,
 				AE09221F1DD3A658007CB32D /* AppDelegate.m */,
 				AE0922211DD3A658007CB32D /* ViewController.h */,
@@ -138,6 +151,21 @@
 				AE0922421DD3A658007CB32D /* Info.plist */,
 			);
 			path = TrackUITests;
+			sourceTree = "<group>";
+		};
+		AE09224E1DD3A68D007CB32D /* Track */ = {
+			isa = PBXGroup;
+			children = (
+				AE0922581DD3A72C007CB32D /* TrackRequest.h */,
+				AE0922591DD3A72C007CB32D /* TrackRequest.m */,
+				AE09224F1DD3A693007CB32D /* LogData.h */,
+				AE0922501DD3A693007CB32D /* LogData.m */,
+				AE0922511DD3A693007CB32D /* Tracker.h */,
+				AE0922521DD3A693007CB32D /* Tracker.m */,
+				AE0922531DD3A693007CB32D /* Sender.h */,
+				AE0922541DD3A693007CB32D /* Sender.m */,
+			);
+			path = Track;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,8 +304,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE0922551DD3A693007CB32D /* LogData.m in Sources */,
 				AE0922231DD3A658007CB32D /* ViewController.m in Sources */,
+				AE0922561DD3A693007CB32D /* Tracker.m in Sources */,
 				AE0922201DD3A658007CB32D /* AppDelegate.m in Sources */,
+				AE09225A1DD3A72C007CB32D /* TrackRequest.m in Sources */,
+				AE0922571DD3A693007CB32D /* Sender.m in Sources */,
 				AE09221D1DD3A658007CB32D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
