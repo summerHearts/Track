@@ -8,10 +8,15 @@
 
 #import "ViewController.h"
 #import "Tracker.h"
-
+#import "MainHomeController.h"
 static NSString *const viewWillAppear = @"viewWillAppear";
 
+static NSString *const viewWillDisappear = @"viewWillDisappear";
+
+
 @interface ViewController ()
+@property (weak, nonatomic) IBOutlet UIButton *pushButton;
+- (IBAction)pushAction:(id)sender;
 
 @end
 
@@ -19,7 +24,6 @@ static NSString *const viewWillAppear = @"viewWillAppear";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
 }
 
 
@@ -29,10 +33,20 @@ static NSString *const viewWillAppear = @"viewWillAppear";
                                       event:viewWillAppear]];
 }
 
+- (void)viewWillDisappear:(BOOL)animated{
+    [super viewWillDisappear:animated];
+    [[Tracker sharedInstance] addLog:[[LogData create]
+                                      event:viewWillDisappear]];
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
 
+- (IBAction)pushAction:(id)sender {
+    MainHomeController *mainHomeController = [[MainHomeController alloc]init];
+    [self.navigationController pushViewController:mainHomeController animated:YES];
+}
 @end

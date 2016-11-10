@@ -7,7 +7,8 @@
 //
 
 #import "AppDelegate.h"
-
+#import "Tracker.h"
+#import <AVOSCloud/AVOSCloud.h>
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    [AVOSCloud setApplicationId:@"pEntQAxG0LdmrlcoJp4OWImX-gzGzoHsz" clientKey:@"4MYWAzn8UwXYO1GzbKm1boi7"];
     return YES;
 }
 
@@ -26,10 +28,20 @@
     // Use this method to pause ongoing tasks, disable timers, and invalidate graphics rendering callbacks. Games should use this method to pause the game.
 }
 
-
 - (void)applicationDidEnterBackground:(UIApplication *)application {
-    // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-    // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    //Track
+    [[Tracker sharedInstance] exit];
+    
+    //后台运行
+    __block    UIBackgroundTaskIdentifier bgTask;
+    bgTask = [application beginBackgroundTaskWithExpirationHandler:^{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            if (bgTask != UIBackgroundTaskInvalid)
+            {
+                bgTask = UIBackgroundTaskInvalid;
+            }
+        });
+    }];
 }
 
 

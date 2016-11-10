@@ -59,15 +59,15 @@ static NSString *s_uuid;
 }
 
 - (NSDictionary*)getDefaultParams{
-    NSDictionary* commonDic = @{@"district" : @"s",
+    NSDictionary* commonDic = @{@"district" : @"view appear",
                                 @"packageName" :  [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleIdentifier"],
                                 @"timeStamp" : [NSString stringWithFormat:@"%lld",(long long)[[NSDate date]timeIntervalSince1970]],
-                                @"deviceId" : @"sd",
-                                @"model" : @"sd",
+                                @"deviceId" : @"122xsdsdssfsdk232323",
+                                @"model" : @"Main",
                                 @"os" : @"ios",
                                 @"version" : [[[NSBundle mainBundle]infoDictionary] objectForKey:@"CFBundleShortVersionString"],
                                 @"channel" : @"appstore",
-                                @"userId"  :@"sdsd"
+                                @"userId"  :@"23245"
                                 };
     return commonDic;
 }

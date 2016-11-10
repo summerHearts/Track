@@ -7,8 +7,10 @@
 //
 
 #import "TrackRequest.h"
-
-#define APP_STATISTICS_URL     @"http://iapplog.imike.com:8000"
+#import "MJExtension.h"
+#import "TrackerModel.h"
+#import <AVOSCloud/AVOSCloud.h>
+#define APP_STATISTICS_URL     @"xxxxxxxxx"
 
 @implementation TrackRequest
 
@@ -20,6 +22,26 @@
     NSDictionary *dic=[[NSDictionary alloc]initWithObjectsAndKeys:dataArray, @"data", nil];
     NSData *jsonData = [NSJSONSerialization dataWithJSONObject:dic options:0 error:nil];
     NSString *jsonString = [[NSString alloc] initWithData:jsonData encoding:NSUTF8StringEncoding];
+    
+    TrackerModel *trackerModel = [TrackerModel mj_objectWithKeyValues:jsonString];
+
+    for (Data *data in trackerModel.data) {
+        AVObject *testObject = [AVObject objectWithClassName:@"TrackerModel"];
+        [testObject setObject:data.district forKey:@"district"];
+        [testObject setObject:data.deviceId forKey:@"deviceId"];
+        [testObject setObject:data.os forKey:@"os"];
+        [testObject setObject:data.channel forKey:@"channel"];
+        [testObject setObject:data.eventType forKey:@"eventType"];
+        [testObject setObject:data.userId forKey:@"userId"];
+        [testObject setObject:data.model forKey:@"model"];
+        [testObject setObject:data.dataName forKey:@"dataName"];
+        [testObject setObject:data.timeStamp forKey:@"timeStamp"];
+        [testObject setObject:data.version forKey:@"version"];
+        [testObject setObject:data.packageName forKey:@"packageName"];
+        [testObject save];
+    }
+    
+    
     NSString* jsonStringPost = [jsonString stringByReplacingOccurrencesOfString:@"\"" withString:@"'"];
     jsonStringPost = [jsonStringPost stringByReplacingOccurrencesOfString:@"'{" withString:@"{"];
     jsonStringPost = [jsonStringPost stringByReplacingOccurrencesOfString:@"}'" withString:@"}"];

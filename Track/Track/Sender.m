@@ -48,10 +48,9 @@ static dispatch_once_t onceToken;
         @synchronized(self) {
             if([self.dataArray count] > 0){
                 NSString* data = [self.dataArray objectAtIndex:0];
-                
-                //OTS
+       
                 [TrackRequest sendTrackOTSDataSync:data];
-                //BI
+            
                 BOOL sendResult = [TrackRequest sendTrackDataSync:data];
                 if(sendResult){
                     [self.dataArray removeObjectAtIndex:0];
@@ -67,7 +66,6 @@ static dispatch_once_t onceToken;
             dispatch_semaphore_wait(self.semaphore, timeout);
         }
         NSLog(@"%@", @"in loop~~~~~~");
-        
     }
 }
 

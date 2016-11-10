@@ -19,6 +19,28 @@
 		AE0922561DD3A693007CB32D /* Tracker.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922521DD3A693007CB32D /* Tracker.m */; };
 		AE0922571DD3A693007CB32D /* Sender.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922541DD3A693007CB32D /* Sender.m */; };
 		AE09225A1DD3A72C007CB32D /* TrackRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AE0922591DD3A72C007CB32D /* TrackRequest.m */; };
+		AEE6A7031DD40B3D00C27A32 /* AVOSCloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A6EA1DD40AEA00C27A32 /* AVOSCloud.framework */; };
+		AEE6A7041DD40B3D00C27A32 /* AVOSCloudIM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A6F61DD40AEA00C27A32 /* AVOSCloudIM.framework */; };
+		AEE6A7071DD40B7900C27A32 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A7061DD40B7900C27A32 /* libz.tbd */; };
+		AEE6A7091DD40B9200C27A32 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A7081DD40B9200C27A32 /* libc++.tbd */; };
+		AEE6A70B1DD40BA500C27A32 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A70A1DD40BA500C27A32 /* libicucore.tbd */; };
+		AEE6A70D1DD40BAD00C27A32 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A70C1DD40BAD00C27A32 /* libsqlite3.tbd */; };
+		AEE6A70F1DD40BB600C27A32 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A70E1DD40BB600C27A32 /* SystemConfiguration.framework */; };
+		AEE6A7111DD40BC100C27A32 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A7101DD40BC100C27A32 /* MobileCoreServices.framework */; };
+		AEE6A7131DD40BCB00C27A32 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A7121DD40BCB00C27A32 /* CoreTelephony.framework */; };
+		AEE6A7151DD40BD300C27A32 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEE6A7141DD40BD300C27A32 /* CoreLocation.framework */; };
+		AEE6A7181DD40E7300C27A32 /* MainHomeController.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7171DD40E7300C27A32 /* MainHomeController.m */; };
+		AEE6A7231DD410FE00C27A32 /* TrackerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7221DD410FE00C27A32 /* TrackerModel.m */; };
+		AEE6A73F1DD411AE00C27A32 /* MJExtensionConst.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A72C1DD411AE00C27A32 /* MJExtensionConst.m */; };
+		AEE6A7401DD411AE00C27A32 /* MJFoundation.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A72E1DD411AE00C27A32 /* MJFoundation.m */; };
+		AEE6A7411DD411AE00C27A32 /* MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7301DD411AE00C27A32 /* MJProperty.m */; };
+		AEE6A7421DD411AE00C27A32 /* MJPropertyKey.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7321DD411AE00C27A32 /* MJPropertyKey.m */; };
+		AEE6A7431DD411AE00C27A32 /* MJPropertyType.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7341DD411AE00C27A32 /* MJPropertyType.m */; };
+		AEE6A7441DD411AE00C27A32 /* NSObject+MJClass.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7361DD411AE00C27A32 /* NSObject+MJClass.m */; };
+		AEE6A7451DD411AE00C27A32 /* NSObject+MJCoding.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A7381DD411AE00C27A32 /* NSObject+MJCoding.m */; };
+		AEE6A7461DD411AE00C27A32 /* NSObject+MJKeyValue.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A73A1DD411AE00C27A32 /* NSObject+MJKeyValue.m */; };
+		AEE6A7471DD411AE00C27A32 /* NSObject+MJProperty.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A73C1DD411AE00C27A32 /* NSObject+MJProperty.m */; };
+		AEE6A7481DD411AE00C27A32 /* NSString+MJExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = AEE6A73E1DD411AE00C27A32 /* NSString+MJExtension.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +57,83 @@
 			proxyType = 1;
 			remoteGlobalIDString = AE0922171DD3A658007CB32D;
 			remoteInfo = Track;
+		};
+		AEE6A6E91DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419861A5A791300C5C6C4;
+			remoteInfo = "AVOSCloud-iOS";
+		};
+		AEE6A6EB1DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419911A5A791300C5C6C4;
+			remoteInfo = "AVOSCloud-iOSTests";
+		};
+		AEE6A6ED1DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70CA7F681BDE2DC3000A3B21;
+			remoteInfo = "AVOSCloud-macOS";
+		};
+		AEE6A6EF1DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 70F315321BDE503B00D691B3;
+			remoteInfo = "AVOSCloud-macOSTests";
+		};
+		AEE6A6F11DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 83D8CF551C17DAF50094279D;
+			remoteInfo = "AVOSCloud-tvOS";
+		};
+		AEE6A6F31DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8320F95C1C1918C60024B45E;
+			remoteInfo = "AVOSCloud-watchOS";
+		};
+		AEE6A6F51DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419C31A5A796000C5C6C4;
+			remoteInfo = "AVOSCloudIM-iOS";
+		};
+		AEE6A6F71DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C8419CD1A5A796000C5C6C4;
+			remoteInfo = "AVOSCloudIM-iOSTests";
+		};
+		AEE6A6F91DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 704F3B6E1BE0D0180033245C;
+			remoteInfo = "AVOSCloudIM-macOS";
+		};
+		AEE6A6FB1DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 704F3B771BE0D0180033245C;
+			remoteInfo = "AVOSCloudIM-macOSTests";
+		};
+		AEE6A6FD1DD40AEA00C27A32 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 8C255D261AE9F815008A6FFC;
+			remoteInfo = "AVOSCloudCrashReporting-iOS";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -63,6 +162,40 @@
 		AE0922541DD3A693007CB32D /* Sender.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Sender.m; sourceTree = "<group>"; };
 		AE0922581DD3A72C007CB32D /* TrackRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackRequest.h; sourceTree = "<group>"; };
 		AE0922591DD3A72C007CB32D /* TrackRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackRequest.m; sourceTree = "<group>"; };
+		AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AVOS.xcodeproj; path = AVOS/AVOS.xcodeproj; sourceTree = "<group>"; };
+		AEE6A7061DD40B7900C27A32 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		AEE6A7081DD40B9200C27A32 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		AEE6A70A1DD40BA500C27A32 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		AEE6A70C1DD40BAD00C27A32 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		AEE6A70E1DD40BB600C27A32 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		AEE6A7101DD40BC100C27A32 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		AEE6A7121DD40BCB00C27A32 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		AEE6A7141DD40BD300C27A32 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		AEE6A7161DD40E7300C27A32 /* MainHomeController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainHomeController.h; sourceTree = "<group>"; };
+		AEE6A7171DD40E7300C27A32 /* MainHomeController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainHomeController.m; sourceTree = "<group>"; };
+		AEE6A7211DD410FE00C27A32 /* TrackerModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrackerModel.h; sourceTree = "<group>"; };
+		AEE6A7221DD410FE00C27A32 /* TrackerModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrackerModel.m; sourceTree = "<group>"; };
+		AEE6A72A1DD411AE00C27A32 /* MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtension.h; sourceTree = "<group>"; };
+		AEE6A72B1DD411AE00C27A32 /* MJExtensionConst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJExtensionConst.h; sourceTree = "<group>"; };
+		AEE6A72C1DD411AE00C27A32 /* MJExtensionConst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJExtensionConst.m; sourceTree = "<group>"; };
+		AEE6A72D1DD411AE00C27A32 /* MJFoundation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJFoundation.h; sourceTree = "<group>"; };
+		AEE6A72E1DD411AE00C27A32 /* MJFoundation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJFoundation.m; sourceTree = "<group>"; };
+		AEE6A72F1DD411AE00C27A32 /* MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJProperty.h; sourceTree = "<group>"; };
+		AEE6A7301DD411AE00C27A32 /* MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJProperty.m; sourceTree = "<group>"; };
+		AEE6A7311DD411AE00C27A32 /* MJPropertyKey.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyKey.h; sourceTree = "<group>"; };
+		AEE6A7321DD411AE00C27A32 /* MJPropertyKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyKey.m; sourceTree = "<group>"; };
+		AEE6A7331DD411AE00C27A32 /* MJPropertyType.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MJPropertyType.h; sourceTree = "<group>"; };
+		AEE6A7341DD411AE00C27A32 /* MJPropertyType.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MJPropertyType.m; sourceTree = "<group>"; };
+		AEE6A7351DD411AE00C27A32 /* NSObject+MJClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJClass.h"; sourceTree = "<group>"; };
+		AEE6A7361DD411AE00C27A32 /* NSObject+MJClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJClass.m"; sourceTree = "<group>"; };
+		AEE6A7371DD411AE00C27A32 /* NSObject+MJCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJCoding.h"; sourceTree = "<group>"; };
+		AEE6A7381DD411AE00C27A32 /* NSObject+MJCoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJCoding.m"; sourceTree = "<group>"; };
+		AEE6A7391DD411AE00C27A32 /* NSObject+MJKeyValue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJKeyValue.h"; sourceTree = "<group>"; };
+		AEE6A73A1DD411AE00C27A32 /* NSObject+MJKeyValue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJKeyValue.m"; sourceTree = "<group>"; };
+		AEE6A73B1DD411AE00C27A32 /* NSObject+MJProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+MJProperty.h"; sourceTree = "<group>"; };
+		AEE6A73C1DD411AE00C27A32 /* NSObject+MJProperty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+MJProperty.m"; sourceTree = "<group>"; };
+		AEE6A73D1DD411AE00C27A32 /* NSString+MJExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MJExtension.h"; sourceTree = "<group>"; };
+		AEE6A73E1DD411AE00C27A32 /* NSString+MJExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MJExtension.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +203,16 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AEE6A7151DD40BD300C27A32 /* CoreLocation.framework in Frameworks */,
+				AEE6A7131DD40BCB00C27A32 /* CoreTelephony.framework in Frameworks */,
+				AEE6A7111DD40BC100C27A32 /* MobileCoreServices.framework in Frameworks */,
+				AEE6A70F1DD40BB600C27A32 /* SystemConfiguration.framework in Frameworks */,
+				AEE6A70D1DD40BAD00C27A32 /* libsqlite3.tbd in Frameworks */,
+				AEE6A70B1DD40BA500C27A32 /* libicucore.tbd in Frameworks */,
+				AEE6A7091DD40B9200C27A32 /* libc++.tbd in Frameworks */,
+				AEE6A7071DD40B7900C27A32 /* libz.tbd in Frameworks */,
+				AEE6A7031DD40B3D00C27A32 /* AVOSCloud.framework in Frameworks */,
+				AEE6A7041DD40B3D00C27A32 /* AVOSCloudIM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -93,10 +236,12 @@
 		AE09220F1DD3A658007CB32D = {
 			isa = PBXGroup;
 			children = (
+				AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */,
 				AE09221A1DD3A658007CB32D /* Track */,
 				AE0922341DD3A658007CB32D /* TrackTests */,
 				AE09223F1DD3A658007CB32D /* TrackUITests */,
 				AE0922191DD3A658007CB32D /* Products */,
+				AEE6A7051DD40B7900C27A32 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -113,11 +258,14 @@
 		AE09221A1DD3A658007CB32D /* Track */ = {
 			isa = PBXGroup;
 			children = (
+				AEE6A7291DD411AE00C27A32 /* MJExtension */,
 				AE09224E1DD3A68D007CB32D /* Track */,
 				AE09221E1DD3A658007CB32D /* AppDelegate.h */,
 				AE09221F1DD3A658007CB32D /* AppDelegate.m */,
 				AE0922211DD3A658007CB32D /* ViewController.h */,
 				AE0922221DD3A658007CB32D /* ViewController.m */,
+				AEE6A7161DD40E7300C27A32 /* MainHomeController.h */,
+				AEE6A7171DD40E7300C27A32 /* MainHomeController.m */,
 				AE0922241DD3A658007CB32D /* Main.storyboard */,
 				AE0922271DD3A658007CB32D /* Assets.xcassets */,
 				AE0922291DD3A658007CB32D /* LaunchScreen.storyboard */,
@@ -164,8 +312,71 @@
 				AE0922521DD3A693007CB32D /* Tracker.m */,
 				AE0922531DD3A693007CB32D /* Sender.h */,
 				AE0922541DD3A693007CB32D /* Sender.m */,
+				AEE6A7211DD410FE00C27A32 /* TrackerModel.h */,
+				AEE6A7221DD410FE00C27A32 /* TrackerModel.m */,
 			);
 			path = Track;
+			sourceTree = "<group>";
+		};
+		AEE6A6DC1DD40AE900C27A32 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEE6A6EA1DD40AEA00C27A32 /* AVOSCloud.framework */,
+				AEE6A6EC1DD40AEA00C27A32 /* AVOSCloud-iOSTests.xctest */,
+				AEE6A6EE1DD40AEA00C27A32 /* AVOSCloud.framework */,
+				AEE6A6F01DD40AEA00C27A32 /* AVOSCloud-macOSTests.xctest */,
+				AEE6A6F21DD40AEA00C27A32 /* AVOSCloud.framework */,
+				AEE6A6F41DD40AEA00C27A32 /* AVOSCloud.framework */,
+				AEE6A6F61DD40AEA00C27A32 /* AVOSCloudIM.framework */,
+				AEE6A6F81DD40AEA00C27A32 /* AVOSCloudIM-iOSTests.xctest */,
+				AEE6A6FA1DD40AEA00C27A32 /* AVOSCloudIM.framework */,
+				AEE6A6FC1DD40AEA00C27A32 /* AVOSCloudIM-macOSTests.xctest */,
+				AEE6A6FE1DD40AEA00C27A32 /* AVOSCloudCrashReporting.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEE6A7051DD40B7900C27A32 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEE6A7141DD40BD300C27A32 /* CoreLocation.framework */,
+				AEE6A7121DD40BCB00C27A32 /* CoreTelephony.framework */,
+				AEE6A7101DD40BC100C27A32 /* MobileCoreServices.framework */,
+				AEE6A70E1DD40BB600C27A32 /* SystemConfiguration.framework */,
+				AEE6A70C1DD40BAD00C27A32 /* libsqlite3.tbd */,
+				AEE6A70A1DD40BA500C27A32 /* libicucore.tbd */,
+				AEE6A7081DD40B9200C27A32 /* libc++.tbd */,
+				AEE6A7061DD40B7900C27A32 /* libz.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEE6A7291DD411AE00C27A32 /* MJExtension */ = {
+			isa = PBXGroup;
+			children = (
+				AEE6A72A1DD411AE00C27A32 /* MJExtension.h */,
+				AEE6A72B1DD411AE00C27A32 /* MJExtensionConst.h */,
+				AEE6A72C1DD411AE00C27A32 /* MJExtensionConst.m */,
+				AEE6A72D1DD411AE00C27A32 /* MJFoundation.h */,
+				AEE6A72E1DD411AE00C27A32 /* MJFoundation.m */,
+				AEE6A72F1DD411AE00C27A32 /* MJProperty.h */,
+				AEE6A7301DD411AE00C27A32 /* MJProperty.m */,
+				AEE6A7311DD411AE00C27A32 /* MJPropertyKey.h */,
+				AEE6A7321DD411AE00C27A32 /* MJPropertyKey.m */,
+				AEE6A7331DD411AE00C27A32 /* MJPropertyType.h */,
+				AEE6A7341DD411AE00C27A32 /* MJPropertyType.m */,
+				AEE6A7351DD411AE00C27A32 /* NSObject+MJClass.h */,
+				AEE6A7361DD411AE00C27A32 /* NSObject+MJClass.m */,
+				AEE6A7371DD411AE00C27A32 /* NSObject+MJCoding.h */,
+				AEE6A7381DD411AE00C27A32 /* NSObject+MJCoding.m */,
+				AEE6A7391DD411AE00C27A32 /* NSObject+MJKeyValue.h */,
+				AEE6A73A1DD411AE00C27A32 /* NSObject+MJKeyValue.m */,
+				AEE6A73B1DD411AE00C27A32 /* NSObject+MJProperty.h */,
+				AEE6A73C1DD411AE00C27A32 /* NSObject+MJProperty.m */,
+				AEE6A73D1DD411AE00C27A32 /* NSString+MJExtension.h */,
+				AEE6A73E1DD411AE00C27A32 /* NSString+MJExtension.m */,
+			);
+			path = MJExtension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,6 +474,12 @@
 			mainGroup = AE09220F1DD3A658007CB32D;
 			productRefGroup = AE0922191DD3A658007CB32D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = AEE6A6DC1DD40AE900C27A32 /* Products */;
+					ProjectRef = AEE6A6DB1DD40AE900C27A32 /* AVOS.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				AE0922171DD3A658007CB32D /* Track */,
@@ -271,6 +488,86 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		AEE6A6EA1DD40AEA00C27A32 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = AEE6A6E91DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6EC1DD40AEA00C27A32 /* AVOSCloud-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloud-iOSTests.xctest";
+			remoteRef = AEE6A6EB1DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6EE1DD40AEA00C27A32 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = AEE6A6ED1DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6F01DD40AEA00C27A32 /* AVOSCloud-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloud-macOSTests.xctest";
+			remoteRef = AEE6A6EF1DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6F21DD40AEA00C27A32 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = AEE6A6F11DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6F41DD40AEA00C27A32 /* AVOSCloud.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloud.framework;
+			remoteRef = AEE6A6F31DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6F61DD40AEA00C27A32 /* AVOSCloudIM.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloudIM.framework;
+			remoteRef = AEE6A6F51DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6F81DD40AEA00C27A32 /* AVOSCloudIM-iOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloudIM-iOSTests.xctest";
+			remoteRef = AEE6A6F71DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6FA1DD40AEA00C27A32 /* AVOSCloudIM.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloudIM.framework;
+			remoteRef = AEE6A6F91DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6FC1DD40AEA00C27A32 /* AVOSCloudIM-macOSTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AVOSCloudIM-macOSTests.xctest";
+			remoteRef = AEE6A6FB1DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		AEE6A6FE1DD40AEA00C27A32 /* AVOSCloudCrashReporting.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AVOSCloudCrashReporting.framework;
+			remoteRef = AEE6A6FD1DD40AEA00C27A32 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		AE0922161DD3A658007CB32D /* Resources */ = {
@@ -305,11 +602,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				AE0922551DD3A693007CB32D /* LogData.m in Sources */,
+				AEE6A7471DD411AE00C27A32 /* NSObject+MJProperty.m in Sources */,
+				AEE6A7401DD411AE00C27A32 /* MJFoundation.m in Sources */,
+				AEE6A7181DD40E7300C27A32 /* MainHomeController.m in Sources */,
+				AEE6A7441DD411AE00C27A32 /* NSObject+MJClass.m in Sources */,
+				AEE6A7481DD411AE00C27A32 /* NSString+MJExtension.m in Sources */,
+				AEE6A7231DD410FE00C27A32 /* TrackerModel.m in Sources */,
 				AE0922231DD3A658007CB32D /* ViewController.m in Sources */,
+				AEE6A7431DD411AE00C27A32 /* MJPropertyType.m in Sources */,
+				AEE6A7461DD411AE00C27A32 /* NSObject+MJKeyValue.m in Sources */,
 				AE0922561DD3A693007CB32D /* Tracker.m in Sources */,
 				AE0922201DD3A658007CB32D /* AppDelegate.m in Sources */,
+				AEE6A7411DD411AE00C27A32 /* MJProperty.m in Sources */,
+				AEE6A73F1DD411AE00C27A32 /* MJExtensionConst.m in Sources */,
 				AE09225A1DD3A72C007CB32D /* TrackRequest.m in Sources */,
+				AEE6A7451DD411AE00C27A32 /* NSObject+MJCoding.m in Sources */,
 				AE0922571DD3A693007CB32D /* Sender.m in Sources */,
+				AEE6A7421DD411AE00C27A32 /* MJPropertyKey.m in Sources */,
 				AE09221D1DD3A658007CB32D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +771,7 @@
 				DEVELOPMENT_TEAM = AWA9R9FXT6;
 				INFOPLIST_FILE = Track/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.Track;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -474,6 +784,7 @@
 				DEVELOPMENT_TEAM = AWA9R9FXT6;
 				INFOPLIST_FILE = Track/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = www.fangchuang.com.Track;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -548,6 +859,7 @@
 				AE0922471DD3A658007CB32D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE0922481DD3A658007CB32D /* Build configuration list for PBXNativeTarget "TrackTests" */ = {
 			isa = XCConfigurationList;
@@ -556,6 +868,7 @@
 				AE09224A1DD3A658007CB32D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		AE09224B1DD3A658007CB32D /* Build configuration list for PBXNativeTarget "TrackUITests" */ = {
 			isa = XCConfigurationList;
@@ -564,6 +877,7 @@
 				AE09224D1DD3A658007CB32D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
