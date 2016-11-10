@@ -40,20 +40,7 @@
         [testObject setObject:data.packageName forKey:@"packageName"];
         [testObject save];
     }
-    
-    
-    NSString* jsonStringPost = [jsonString stringByReplacingOccurrencesOfString:@"\"" withString:@"'"];
-    jsonStringPost = [jsonStringPost stringByReplacingOccurrencesOfString:@"'{" withString:@"{"];
-    jsonStringPost = [jsonStringPost stringByReplacingOccurrencesOfString:@"}'" withString:@"}"];
-#if DEBUG
-    NSLog(@"BI埋点数据:%@",jsonStringPost);
-#endif
-    NSURL *url=[NSURL URLWithString:APP_STATISTICS_URL];
-    NSMutableURLRequest *request = [NSMutableURLRequest requestWithURL:url cachePolicy:NSURLRequestReloadIgnoringLocalCacheData timeoutInterval:10];
-    request.HTTPMethod=@"POST";
-    request.HTTPBody=[jsonStringPost dataUsingEncoding:NSUTF8StringEncoding];
-    NSData* result = [NSURLConnection sendSynchronousRequest:request returningResponse:nil error:nil];
-    return result != nil;
+    return YES;
 }
 
 +(BOOL)sendTrackOTSDataSync:(NSString *)data{

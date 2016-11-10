@@ -9,6 +9,10 @@
 #import "AppDelegate.h"
 #import "Tracker.h"
 #import <AVOSCloud/AVOSCloud.h>
+
+static NSString *const APPKID = @"sadJEEKELJELJWEJWEJLWEJLWEJLL";
+static NSString *const APPKey = @"9239294sdsJJKKWKKEKKEwwe";
+
 @interface AppDelegate ()
 
 @end
@@ -17,8 +21,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
-    [AVOSCloud setApplicationId:@"pEntQAxG0LdmrlcoJp4OWImX-gzGzoHsz" clientKey:@"4MYWAzn8UwXYO1GzbKm1boi7"];
+    [AVOSCloud setApplicationId:APPKID clientKey:APPKey];
     return YES;
 }
 
